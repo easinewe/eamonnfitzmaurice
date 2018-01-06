@@ -6,7 +6,7 @@
 	<meta name="format-detection" content="telephone=no">
 
 	<title>Eamonn Fitzmaurice - Data</title>
-	<link rel='stylesheet' type='text/css' media='all' href="style.css?v2.0" />
+	<link rel='stylesheet' type='text/css' media='all' href="style.css?v2.1" />
 	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
 </head>
 
@@ -84,7 +84,7 @@
 							echo '<span class="goal" data-goal="'.$i.'"></span>';
 							echo '<span class="dot" data-amount="'.$qty.'"></span>';
 							echo '<span class="total">'.$tweet_text.'</span>';
-							echo '<span class="success">'.$avg.'</span>';
+							//echo '<span class="success">'.$avg.'</span>';
 							echo '<span class="date">'.$new_day.'</span>';
 							echo '</li>';
 						$tw++;
