@@ -6,7 +6,7 @@
 	<meta name="format-detection" content="telephone=no">
 
 	<title>Eamonn Fitzmaurice - Data</title>
-	<link rel='stylesheet' type='text/css' media='all' href="style.css?v2.1" />
+	<link rel='stylesheet' type='text/css' media='all' href="style.css?version=2" />
 	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
 </head>
 
