@@ -277,6 +277,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 		float: left;
 		clear: both;
 		width: 100%;
+		box-sizing: border-box;
 	}
 	h3,h4{
 		display: inline-block;
