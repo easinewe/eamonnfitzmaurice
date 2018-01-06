@@ -170,7 +170,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 	body.show_goals footer{
 		display: none;
 	}
-	body.show_goals span.dot{
+	body.show_goals span.dot,
+	body.show_goals span.nada{
 		width: 100% !important;
 		height: 100% !important;
 		top: 0px;
@@ -180,9 +181,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 		border-radius: 0px;
 		margin-left: 0px !important;
 		margin-top: 0px !important;
+		background-color: rgba(0, 0, 0, 0.9) !important;
 	}
 	body.show_goals:before{
-		background-color: rgba(255, 0, 0, 0.9);
+		background-color: rgba(0, 0, 0, 0.9);
 	}
 	ul{
 		margin-top: 20vh;	
@@ -213,13 +215,13 @@ table { border-collapse: collapse; border-spacing: 0; }
 		height: 5px;
 		top: 50%;
 		left: 50%;
-		background-color: rgba(0,0,0,0.91);
+		background-color: rgba(0,0,0,0.9);
 		transition: all .5s ease-in;
 		border-radius: 50%;
 	}
 	span.nada{
-		background-color: rgba(0,0,0,0.0) !important;
-		border: solid 9px rgba(0,0,0,0.91);
+		background-color: rgba(0,0,0,0.0);
+		border: solid 9px rgba(0,0,0,0.9);
 	}
 	span.goal{
 		position: absolute;
