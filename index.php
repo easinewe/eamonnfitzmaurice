@@ -43,7 +43,7 @@
 		$i++;
 	}
 	
-	var_dump($daily_tweets_2['total']);
+	//var_dump($daily_tweets_2['total']);
 ?>
 
 		<header id="topBar">
