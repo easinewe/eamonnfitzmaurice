@@ -184,7 +184,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 		background-color: rgba(0, 0, 0, 0.9) !important;
 	}
 	body.show_goals:before{
-		background-color: rgba(0, 0, 0, 0.9);
+		background-color: rgba(0, 0, 0, 1.0);
 	}
 	ul{
 		margin-top: 20vh;	
