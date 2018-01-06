@@ -1,0 +1,359 @@
+/*--------------------------------------------------------------
+1.0 Normalize
+Reset | v2.0 | 20110126 | License: none (public domain)
+http://meyerweb.com/eric/tools/css/reset/
+---------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+.clearfix:after { visibility: hidden; display: block; content: ""; clear: both; height: 0;}
+.clear:before, .clear:after {content:""; display:block;}
+.clear:after {clear:both;}
+.clear {zoom:1;}
+:focus {outline:none;}
+.hidden {display: none;}
+	body{
+		font-family: 'Bitter', serif;
+	}
+	body:after{
+		content:"";
+		position:fixed; /* stretch a fixed position to the whole screen */
+		top:0;
+		height:100vh; /* fix for mobile browser address bar appearing disappearing */
+		left:0;
+		right:0;
+		z-index:-2; /* needed to keep in the background */
+		background-image: url(images/eamonn-fitzmaurice.jpg);
+		background-color: red;
+		background-position: center bottom;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	body:before{
+		content:"";
+		position:fixed; /* stretch a fixed position to the whole screen */
+		top:0;
+		height:100vh; /* fix for mobile browser address bar appearing disappearing */
+		left:0;
+		right:0;
+		z-index:-1; /* needed to keep in the background */
+		background-color: rgba(255, 0, 0, 0.0);
+		transition: background-color .5s ease-in;
+	}
+	a:link{
+		text-decoration: none;	
+		color: black;
+	}
+	a:visited{
+		color: black;
+	}
+	a:hover{
+		color: red;
+	}
+	header,
+	header > span{
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		padding: 10vh 5vh 2vh 5vh;
+		z-index: 9997;
+		transition: all 0.25s ease-in;
+		text-align: center;
+	}
+	body.scrolled header span{
+		top: -25vh;
+	}
+	#topBar:hover span,
+	body.show_goals header span{
+		top: 0px;
+	}
+	h1, h2{
+		display: inline-block;
+		font-size: 30px;
+		color: black;
+		font-weight: normal;
+		cursor: pointer;
+	}
+	header h2{
+		float: right;
+		z-index: 9999;
+		cursor: pointer;
+	}
+	header h1:hover{
+		color:red;
+	}
+
+	#goals_info{
+		position: fixed;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		/*background-color: rgba(255, 255, 255, 0.95);*/
+		z-index: -5;
+		opacity: 0.0;
+		transition: all .75s ease-in;
+	}	
+	#goals_info p{
+		position: absolute;
+		top: 50%;
+		left: 0px;
+		right: 0px;	
+		width: 70%;
+		transform: translateY(-50%);
+		text-align: center;
+		margin: auto;
+		font-size: 2em;
+		line-height: 1.5em;
+		color: white;
+	}
+	#goals_info p a{
+		color: white;
+	}
+	#goals_info p a:hover{
+		color: black;
+	}
+	.exit{
+		width: 10vh;
+		height: 10vh;
+		position: absolute;
+		font-size: 30px;
+		bottom: 15vh;
+		right: 0px;
+		left: 0px;
+		text-align: center;
+		color: white;
+		cursor: pointer;
+		margin: auto;
+	}
+	.exit:before,.exit:after{
+		content:'';
+		position:absolute;
+		width:10vh;
+		height:1px;
+		background-color:white;
+		top:5vh;
+	}
+
+	.exit:before{
+		-webkit-transform:rotate(45deg);
+		-moz-transform:rotate(45deg);
+		transform:rotate(45deg);
+		left:0px;
+	}
+	.exit:after{
+		-webkit-transform:rotate(-45deg);
+		-moz-transform:rotate(-45deg);
+		transform:rotate(-45deg);
+		right:0px;
+	}
+	.exit:hover:before,.exit:hover:after{
+		background-color: black;
+	}
+	body.show_goals{
+		overflow: hidden;
+	}
+	body.show_goals #goals_info{
+		z-index: 9998;
+		opacity: 1.0;
+	}
+	body.show_goals header h1{
+		color: white
+	}
+	body.show_goals footer{
+		display: none;
+	}
+	body.show_goals span.dot{
+		width: 100% !important;
+		height: 100% !important;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		border-radius: 0px;
+		margin-left: 0px !important;
+		margin-top: 0px !important;
+	}
+	body.show_goals:before{
+		background-color: rgba(255, 0, 0, 0.9);
+	}
+	ul{
+		margin-top: 20vh;	
+	}
+	li{
+		position: relative;
+		float: left;
+		width: 20vw;
+		height: 20vw;
+		margin: 0px;
+		background-image: 
+			linear-gradient(to bottom, black 5%, transparent 5%, transparent 95%, black 95%), 
+			linear-gradient(to bottom, black 5%, transparent 5%, transparent 95%, black 95%), 
+			linear-gradient(to right, black 5%, transparent 5%, transparent 95%, black 95%), 
+			linear-gradient(to right, black 5%, transparent 5%, transparent 95%, black 95%);
+		 background-size: 0.5px 100%, 0.5px 100%, 100% 0.5px, 100% 0.5px;
+		 background-position: 0px 0px, 100% 0px, 0px 0px, 0px 100%;
+		 background-repeat: no-repeat;
+		 color: white;
+	}
+	li span{
+		display: block;
+		text-align: center;
+	}
+	span.dot{
+		position: absolute;
+		width: 5px;
+		height: 5px;
+		top: 50%;
+		left: 50%;
+		background-color: rgba(255,0,0,0.9);
+		transition: all .5s ease-in;
+		border-radius: 50%;
+	}
+	span.nada{
+		background-color: rgba(255,0,0,0.0);
+		border: solid 10px rgba(255,0,0,0.9);
+	}
+	span.goal{
+		position: absolute;
+		width: 0px;
+		height: 0px;
+		top: 50%;
+		left: 50%;
+		background-color: white;
+		transition: all .125s ease-in;
+		border-radius: 50%;
+		display: none;
+	}
+	span.date{
+		display: none;
+		position: absolute;
+		bottom: 1vw;
+		right: 1vw;
+		font-size: 1vw;
+	}
+	span.success{
+		display: none;
+		position: absolute;
+		bottom: 10vw;
+		left: 1vw;
+		font-size: 1vw;
+	}
+	span.total{
+		display: none;
+		position: absolute;
+		top: 1vw;
+		left: 1vw;
+		font-size: 3vw;
+	}
+	li:hover {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	li.weekend:hover {
+		background-color: rgba(255, 255, 255, 0.5);
+		color: black;
+	}
+
+	li:hover > span.total,
+	li:hover > span.date,
+	li:hover > span.success{
+		display: block;
+	}
+	li:hover > span.dot{
+		/*display: none;*/
+	}
+
+	footer{
+		padding: 50px;
+		z-index: 9999;
+		text-align: center;
+		float: left;
+		clear: both;
+		width: 100%;
+	}
+	h3,h4{
+		display: inline-block;
+		font-size: 30px;
+		color: black;
+		font-weight: normal;
+	}
+	footer h4{
+		float: right;
+	}
+
+	@media screen and (max-width: 900px) {
+		li{
+			width: 50vw;
+			height: 50vw;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		html{
+			background-image: none;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			background-position: center;
+		}
+		footer{
+			padding: 10px;
+		}
+		h1,h2,h3,h4,
+		.exit{
+			font-size: 25px;
+		}
+		body.show_goals span.total,
+		body.show_goals span.date,
+		body.show_goals span.success{
+			display: none;
+		}
+		#goals_info p{
+			font-size: 1.3em;
+			width: 90%;
+		}
+		ul{
+			margin-top: 50vh;
+		}
+		.wrapper{
+			background-size: contain;
+		}
+
+		li{
+			width: 100vw;
+			height: 100vw;
+			margin: 0px;
+			background-image: 
+			 linear-gradient(to bottom, black 5%, transparent 5%, transparent 95%, black 95%), 
+			 linear-gradient(to bottom, black 5%, transparent 5%, transparent 95%, black 95%), 
+			 linear-gradient(to right, black 5%, black 5%, black 95%, black 95%), 
+			 linear-gradient(to right, black 5%, black 5%, black 95%, black 95%); 
+		}
+		body.show_goals li{
+			border-bottom: 0px;
+		}
+		span.date{
+			font-size: 5vw;
+			display: block;
+			bottom: 4vw;
+			right: 4vw;
+			color: black;
+		}
+		span.total{
+			font-size: 10vw;
+			display: block;
+			top: 4vw;
+			left: 4vw;
+			color: black;
+
+		}
+
+	}
+
