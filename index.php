@@ -116,7 +116,6 @@
 
 <footer>
 	<h3><a href="mailto:eamonnfitzmaurice@gmail.com">Contact Me</a></h3>
-	<!--<h4><a href="https://www.twitter.com/easinewe/">twitter</a></h4>-->
 </footer>
 
 </body>
