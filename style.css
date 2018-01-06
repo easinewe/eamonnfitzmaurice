@@ -213,13 +213,13 @@ table { border-collapse: collapse; border-spacing: 0; }
 		height: 5px;
 		top: 50%;
 		left: 50%;
-		background-color: rgba(0,0,0,0.9);
+		background-color: rgba(0,0,0,0.91);
 		transition: all .5s ease-in;
 		border-radius: 50%;
 	}
 	span.nada{
 		background-color: rgba(0,0,0,0.0) !important;
-		border: solid 9px rgba(0,0,0,0.9);
+		border: solid 9px rgba(0,0,0,0.91);
 	}
 	span.goal{
 		position: absolute;
