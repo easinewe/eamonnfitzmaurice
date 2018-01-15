@@ -84,7 +84,7 @@
 							echo '<span class="goal" data-goal="'.$i.'"></span>';
 							echo '<span class="dot" data-amount="'.$qty.'"></span>';
 							echo '<span class="total">'.$tweet_text.'</span>';
-							//echo '<span class="success">'.$avg.'</span>';
+							echo '<span class="wknd">'.$weekend.'</span>';
 							echo '<span class="date">'.$new_day.'</span>';
 							echo '</li>';
 						$tw++;
@@ -99,7 +99,7 @@
 							echo '<span class="goal" data-goal="0"></span>';
 							echo '<span class="dot nada" data-amount="50"></span>';
 							echo '<span class="total">0</span>';
-							//echo '<span class="success">'.$avg.'</span>';
+							echo '<span class="wknd">'.$weekend.'</span>';
 							echo '<span class="date">'.$new_day.'</span>';
 							echo '</li>';
 					}

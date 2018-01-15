@@ -80,6 +80,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 		color: black;
 		font-weight: normal;
 		cursor: pointer;
+		letter-spacing: 0px;
+		transition: .25s letter-spacing ease-in;
 	}
 	header h2{
 		float: right;
@@ -87,7 +89,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 		cursor: pointer;
 	}
 	header h1:hover{
-		color:red;
+		letter-spacing: 2px;
 	}
 
 	#goals_info{
@@ -155,7 +157,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 		right:0px;
 	}
 	.exit:hover:before,.exit:hover:after{
-		background-color: black;
+		background-color: gray;
 	}
 	body.show_goals{
 		overflow: hidden;
@@ -221,7 +223,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 	}
 	span.nada{
 		background-color: rgba(0,0,0,0.0);
-		border: solid 9px rgba(0,0,0,0.9);
+		border: solid 4px rgba(0,0,0,0.9);
 	}
 	span.goal{
 		position: absolute;
@@ -241,10 +243,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 		right: 1vw;
 		font-size: 1vw;
 	}
-	span.success{
+	span.wknd{
 		display: none;
 		position: absolute;
-		bottom: 10vw;
+		bottom: 1vw;
 		left: 1vw;
 		font-size: 1vw;
 	}
@@ -256,16 +258,13 @@ table { border-collapse: collapse; border-spacing: 0; }
 		font-size: 3vw;
 	}
 	li:hover {
-		background-color: rgba(0, 0, 0, 0.5);
-	}
-	li.weekend:hover {
 		background-color: rgba(255, 255, 255, 0.5);
 		color: black;
 	}
 
 	li:hover > span.total,
 	li:hover > span.date,
-	li:hover > span.success{
+	li:hover > span.wknd{
 		display: block;
 	}
 	li:hover > span.dot{
