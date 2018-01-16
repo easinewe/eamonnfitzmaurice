@@ -166,6 +166,14 @@ table { border-collapse: collapse; border-spacing: 0; }
 		font-size: 60vh;
 		line-height: 60vh;
 	}
+@media screen and (max-width: 900px) {
+	h1{
+		font-size: 2em;
+	}	
+	h3{
+		font-size: .75em;
+	}
+}
 	
 </style>
 
