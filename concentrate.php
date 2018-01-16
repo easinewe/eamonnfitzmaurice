@@ -177,10 +177,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 		font-size: 40vh;
 	}
 	button[type=submit] {
-		bottom: 5vh;
-		left: 5vh;
-		right: 5vh;
-		top: 5vh;
+		bottom: 3vh;
+		left: 3vh;
+		right: 3vh;
 	}
 
 }
