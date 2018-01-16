@@ -171,8 +171,12 @@ table { border-collapse: collapse; border-spacing: 0; }
 		font-size: 2em;
 	}	
 	h3{
-		font-size: .75em;
+		font-size: 1em;
 	}
+	#result{
+		font-size: 640vh;
+	}
+
 }
 	
 </style>
