@@ -174,7 +174,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 		font-size: 1em;
 	}
 	#result{
+		top: 0;
+		bottom: 0;
 		font-size: 40vh;
+		line-height: 100vh;
 	}
 	button[type=submit] {
 		bottom: 3vh;
