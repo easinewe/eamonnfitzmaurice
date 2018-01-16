@@ -176,8 +176,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 	#result{
 		top: 0;
 		bottom: 0;
-		font-size: 40vh;
-		line-height: 100vh;
+		font-size: 35vh;
+		line-height: 97vh;
 	}
 	button[type=submit] {
 		bottom: 3vh;
