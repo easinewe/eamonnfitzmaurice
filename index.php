@@ -68,7 +68,9 @@
 			$current_day = date('m/d/y');
 			$new_day = $current_day;
 			$weekend = ( date('w', strtotime($new_day)) == 6 || date('w', strtotime($new_day)) == 0)?'weekend':'';
-						
+			
+			$days_visible = 365
+			
 			$date = $daily_tweets_2[$tw]['date'];
 			$tweet_text = $daily_tweets_2[$tw]['amount'];
 			$qty = $tweet_text*0.75;
@@ -77,7 +79,7 @@
 			$avg;
 		
 			//create daily calendar of past year
-			while( ($i <= 365) ){
+			while( ($i <= $days_visible) ){
 					if($date === $new_day){
 						//total has been recorded for that date
 							echo '<li class="'.$weekend.'">';
