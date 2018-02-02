@@ -69,7 +69,7 @@
 			$new_day = $current_day;
 			$weekend = ( date('w', strtotime($new_day)) == 6 || date('w', strtotime($new_day)) == 0)?'weekend':'';
 			
-			$days_visible = 365
+			$days_visible = 365;
 			
 			$date = $daily_tweets_2[$tw]['date'];
 			$tweet_text = $daily_tweets_2[$tw]['amount'];
