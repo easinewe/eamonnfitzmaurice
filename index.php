@@ -99,7 +99,7 @@
 						//no total recorded
 							echo '<li class="'.$weekend.'">';
 							echo '<span class="goal" data-goal="0"></span>';
-							echo '<span class="dot nada" data-amount="50"></span>';
+							//echo '<span class="dot nada" data-amount="50"></span>';
 							echo '<span class="total">0</span>';
 							echo '<span class="wknd">'.$weekend.'</span>';
 							echo '<span class="date">'.$new_day.'</span>';
