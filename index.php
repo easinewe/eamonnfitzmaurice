@@ -6,7 +6,7 @@
 	<meta name="format-detection" content="telephone=no">
 
 	<title>Eamonn Fitzmaurice - Data</title>
-	<link rel='stylesheet' type='text/css' media='all' href="style.css?version=2" />
+	<link rel='stylesheet' type='text/css' media='all' href="style.css?version=3" />
 	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
 </head>
 
@@ -99,7 +99,7 @@
 						//no total recorded
 							echo '<li class="'.$weekend.'">';
 							echo '<span class="goal" data-goal="0"></span>';
-							//echo '<span class="dot nada" data-amount="50"></span>';
+							echo '<span class="dot nada" data-amount="2"></span>';
 							echo '<span class="total">0</span>';
 							echo '<span class="wknd">'.$weekend.'</span>';
 							echo '<span class="date">'.$new_day.'</span>';

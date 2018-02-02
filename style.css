@@ -44,7 +44,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 		right:0;
 		z-index:-1; /* needed to keep in the background */
 		background-color: rgba(255, 0, 0, 0.0);
-		transition: background-color .5s ease-in;
+		transition: background-color .75s ease-in;
 	}
 	a:link{
 		text-decoration: none;	
@@ -101,7 +101,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 		/*background-color: rgba(255, 255, 255, 0.95);*/
 		z-index: -5;
 		opacity: 0.0;
-		transition: all .75s ease-in;
+		transition: all 1s ease-in;
 	}	
 	#goals_info p{
 		position: absolute;
@@ -218,12 +218,12 @@ table { border-collapse: collapse; border-spacing: 0; }
 		top: 50%;
 		left: 50%;
 		background-color: rgba(0,0,0,0.9);
-		transition: all .5s ease-in;
+		transition: all 0.75s ease-in;
 		border-radius: 50%;
 	}
 	span.nada{
-		background-color: rgba(0,0,0,0.0);
-		border: solid 4px rgba(0,0,0,0.9);
+		background-color: rgba(0,0,0,0.9);
+		/*border: solid 4px rgba(0,0,0,0.9);*/
 	}
 	span.goal{
 		position: absolute;
@@ -232,7 +232,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 		top: 50%;
 		left: 50%;
 		background-color: white;
-		transition: all .125s ease-in;
+		transition: all .75s ease-in;
 		border-radius: 50%;
 		display: none;
 	}
