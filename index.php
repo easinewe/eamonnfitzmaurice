@@ -7,7 +7,8 @@
 
 	<title>Eamonn Fitzmaurice - Data</title>
 	<link rel='stylesheet' type='text/css' media='all' href="style.css?version=3" />
-	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+	<!--<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
 </head>
 
 <body>
@@ -53,7 +54,7 @@
 		</header>
 		
 		<div id="goals_info">
-			<p>Recording my personal goals daily through <a href="#">Twitter</a> and visualizing them here.</p>
+			<p>Recording my personal daily goals on <a href="https://twitter.com/Easinewe" target="_blank">Twitter</a> and visualizing them here.</p>
 			<div class="exit" onclick="showGoalStatement();">
 				<span></span>
 				<span></span>
@@ -69,7 +70,7 @@
 			$new_day = $current_day;
 			$weekend = ( date('w', strtotime($new_day)) == 6 || date('w', strtotime($new_day)) == 0)?'weekend':'';
 			
-			$days_visible = 50;
+			$days_visible = 100;
 			
 			$date = $daily_tweets_2[$tw]['date'];
 			$tweet_text = $daily_tweets_2[$tw]['amount'];

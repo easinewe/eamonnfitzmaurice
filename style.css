@@ -17,7 +17,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 :focus {outline:none;}
 .hidden {display: none;}
 	body{
-		font-family: 'Bitter', serif;
+		/*font-family: 'Bitter', serif;*/
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 100;
 	}
 	body:after{
 		content:"";
@@ -114,17 +116,18 @@ table { border-collapse: collapse; border-spacing: 0; }
 		margin: auto;
 		font-size: 2em;
 		line-height: 1.5em;
-		color: white;
+		color: rgb(181, 181, 181);
 	}
 	#goals_info p a{
 		color: white;
 	}
 	#goals_info p a:hover{
-		color: black;
+		color: white;
+		text-decoration: underline;
 	}
 	.exit{
-		width: 10vh;
-		height: 10vh;
+		width: 8vh;
+		height: 8vh;
 		position: absolute;
 		font-size: 30px;
 		bottom: 15vh;
@@ -134,14 +137,16 @@ table { border-collapse: collapse; border-spacing: 0; }
 		color: white;
 		cursor: pointer;
 		margin: auto;
+		transition: all 0.5s;
 	}
 	.exit:before,.exit:after{
 		content:'';
 		position:absolute;
-		width:10vh;
+		width:8vh;
 		height:1px;
 		background-color:white;
-		top:5vh;
+		top:4vh;
+		transition: all 0.5s;
 	}
 
 	.exit:before{
@@ -156,8 +161,14 @@ table { border-collapse: collapse; border-spacing: 0; }
 		transform:rotate(-45deg);
 		right:0px;
 	}
+	.exit:hover{
+		width: 10vh;
+		height: 10vh;
+	}
 	.exit:hover:before,.exit:hover:after{
-		background-color: gray;
+		width:10vh;
+		top:5vh;
+
 	}
 	body.show_goals{
 		overflow: hidden;
@@ -219,7 +230,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 		left: 50%;
 		background-color: rgba(0,0,0,0.9);
 		transition: all 0.75s ease-in;
-		/*border-radius: 50%;*/
+		border-radius: 50%;
 	}
 	span.nada{
 		background-color: rgba(0,0,0,0.9);
@@ -242,6 +253,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 		bottom: 1vw;
 		right: 1vw;
 		font-size: 1vw;
+		letter-spacing: 2px;
 	}
 	span.wknd{
 		display: none;
@@ -258,7 +270,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 		font-size: 3vw;
 	}
 	li:hover {
-		background-color: rgba(255, 255, 255, 0.5);
+		background-color: rgba(255, 255, 255, 0.85);
 		color: black;
 	}
 
@@ -288,6 +300,10 @@ table { border-collapse: collapse; border-spacing: 0; }
 	}
 	footer h4{
 		float: right;
+	}
+	footer a:hover{
+		color: black;
+		text-decoration: underline;
 	}
 
 	@media screen and (max-width: 900px) {
