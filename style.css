@@ -307,6 +307,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 	}
 
 	@media screen and (max-width: 900px) {
+		body{
+			font-weight: 400;
+		}
 		li{
 			width: 50vw;
 			height: 50vw;
