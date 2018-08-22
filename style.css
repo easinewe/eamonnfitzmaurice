@@ -301,8 +301,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 	footer h4{
 		float: right;
 	}
+	footer a:link{
+		color: white;
+	}
 	footer a:hover{
-		color: black;
+		color: white;
 		text-decoration: underline;
 	}
 

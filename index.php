@@ -49,7 +49,7 @@
 
 		<header id="topBar">
 			<span class="title_text">
-			<h1 onclick="showGoalStatement();">Daily Goals</h1>
+			<h1 onclick="showGoalStatement();">Daily Goooooooals</h1>
 			</span>
 		</header>
 		
@@ -67,7 +67,6 @@
 			$i = 0;
 			$tw = 0;
 			$current_day = date('m/d/y');
-			$current_day = '01/31/18'; //cheating to show more successful times
 			$new_day = $current_day;
 			$weekend = ( date('w', strtotime($new_day)) == 6 || date('w', strtotime($new_day)) == 0)?'weekend':'';
 			
