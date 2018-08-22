@@ -67,8 +67,8 @@
 			$i = 0;
 			$tw = 0;
 			$current_day = date('m/d/y');
+			$current_day = '01/31/18'; //cheating to show more successful times
 			$new_day = $current_day;
-			$new_day = '01/31/18'; //cheating to show more successful times
 			$weekend = ( date('w', strtotime($new_day)) == 6 || date('w', strtotime($new_day)) == 0)?'weekend':'';
 			
 			$days_visible = 100;
