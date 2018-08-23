@@ -50,6 +50,8 @@ ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:befor
 html, body {
 	height: 100%;
     overflow-x: hidden;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 body {
 	background:#FFF;
@@ -597,6 +599,7 @@ footer .row{
 		line-height: 22px;
 		margin-bottom: 40px;
 		margin-left: 80px;
+		z-index: 100;
 		height: 50px;
 	}
 	footer{
@@ -651,9 +654,19 @@ footer .row{
 }
 @media only screen and (max-width: 370px) {
 	header img{
-		right: -100px;
+		right: -110px;
 	}
 	header h1{
 		font-size: 16px;
+	}
+	footer{
+		font-size: 14px;
+	}
+	footer h4{
+		font-size: 18px;
+	}
+	#contact span,
+	#office span{
+		width: 50px;
 	}
 }
