@@ -47,10 +47,6 @@ ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:befor
 
 /*  Getting Organized // Base Structure & Styles
 ---------------------------------------------------------- */
-* {
-	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
-}
 html, body {
 	height: 100%;
     overflow-x: hidden;
@@ -464,7 +460,8 @@ address{
 	display: table-footer-group;
 	float: right;
 }
-#contact span{
+#contact span,
+#office span{
 	width: 70px;
 	display: inline-block;
 	font-weight: 600;
@@ -541,15 +538,21 @@ footer .row{
 		right: 10vw;
 		bottom: -45px;
 	}
+	main{
+		margin: 22px 0px;
+	}
 	main section{
 		width: calc(100vw - 40px);
+		margin: 22px 20px 0px 20px;
 		margin-left: 20px;
-		margin-right: 20px;
 	}
 	main h3{
 		font-size: 20px;
 		line-height: 25px;
 		margin-bottom: 20px;
+	}
+	main p{
+		line-height: 25px;
 	}
 	#cq_form{
 		width: 100%;
@@ -566,7 +569,7 @@ footer .row{
 		width: 100%;
 	}
 	#about img{
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 		margin-top: 15px;
 	}
 	#phone,
@@ -589,9 +592,68 @@ footer .row{
 		font-size: 25px;
 		line-height: 36px;
 	}
+	#providers li{
+		position: relative;
+		line-height: 22px;
+		margin-bottom: 40px;
+		margin-left: 80px;
+		height: 50px;
+	}
+	footer{
+		height: auto;
+		padding: 20px;
+	}
+	footer > span{
+		padding: 0px;
+	}
+	footer .row{
+		display: block;
+	}
+	address, #social, footer h4, #copyright{
+		padding: 0px;
+	}
+	#contact span, #office span{
+		display: inline-block;
+	}
+	#contact span{
+		margin-bottom: 5px;
+	}
+	#contact{
+		display: block;
+		float: none;
+	}
+	#map{
+		margin-top: 30px;
+		left: 0px;
+		top: 0px;
+		position: relative;
+	}
+	#map > iframe{
+		width: calc(100vw - 40px);
+		margin: 0px auto;
+	}
+	#social{
+		top: 0px;
+	}
 }
 @media only screen and (max-width: 550px) {
 	header img{
 		right: -90px;
+	}
+	#about{
+		margin: 0px;
+		width: 100vw;
+		border-top: 0px;
+	}
+	#about h3, #about p{
+		padding: 0px 20px;
+	}
+}
+@media only screen and (max-width: 370px) {
+	header img{
+		right: -100px;
+	}
+	header h1{
+		font-size: 16px;
 	}
 }
