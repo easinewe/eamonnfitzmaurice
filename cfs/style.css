@@ -47,11 +47,13 @@ ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:befor
 
 /*  Getting Organized // Base Structure & Styles
 ---------------------------------------------------------- */
-
+* {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
 html, body {
 	height: 100%;
     overflow-x: hidden;
-	-webkit-overflow-scrolling: touch;
 }
 body {
 	background:#FFF;
