@@ -89,6 +89,11 @@ body{
 h4{
 	font-size: 21px;
 }
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
 /* Header */
 
 header{
@@ -688,7 +693,7 @@ footer .row{
 		padding: 0px 10px;
 	}
 	footer{
-		font-size: 18px;
+		font-size: 14px;
 	}
 	footer h4{
 		font-size: 18px;
