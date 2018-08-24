@@ -27,23 +27,6 @@ ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:befor
 .clearfix:after{visibility:hidden;clear:both;height:0}.clear:after{clear:both}.clear{zoom:1}:focus{outline:0}.hidden{display:none}
 
 
-/*  Fonts
----------------------------------------------------------- */
-.BetonEFTU-DemiBold { 
-	font-family: BetonEFTU-DemiBold;
-	font-weight: normal;
-	font-style: normal;
-}
-.BetonEF-Bold { 
-	font-family: BetonEF-Bold;
-	font-weight: normal;
-	font-style: normal;
-}
-.KnockOut-29 { 
-	font-family: "Knockout 29 A", "Knockout 29 B";
-	font-style: normal;
-	font-weight: 400;
-}
 
 /*  Getting Organized // Base Structure & Styles
 ---------------------------------------------------------- */
@@ -60,7 +43,7 @@ body {
 	line-height: 26px;
 	letter-spacing: 0.5px;
 	-webkit-font-smoothing: antialiased;
-	font-family: BetonEFTU-DemiBold;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -81,10 +64,6 @@ a:hover {
 }
 a:visited {
 	color: #3a373e;
-}
-body{
-	font-family: 'Open Sans', sans-serif;
-	font-weight: normal;
 }
 h4{
 	font-size: 21px;
