@@ -55,7 +55,7 @@ html, body {
 }
 body {
 	background:#FFF;
-	color: #4E3524;
+	color: #3a373e;
 	font-size: 16px;
 	line-height: 26px;
 	letter-spacing: 0.5px;
@@ -72,7 +72,7 @@ p {
 }
 a {
 	text-decoration: none;
-	color: #4E3524;
+	color: #3a373e;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);	
 	cursor: pointer;
 }
@@ -80,7 +80,7 @@ a:hover {
 	color: black;
 }
 a:visited {
-	color:  #4E3524;
+	color: #3a373e;
 }
 body{
 	font-family: 'Open Sans', sans-serif;
@@ -549,9 +549,9 @@ footer .row{
 		margin-left: 20px;
 	}
 	main h3{
-		font-size: 20px;
-		line-height: 25px;
-		margin-bottom: 20px;
+		font-size: 24px;
+		line-height: 31px;
+		margin-bottom: 25px;
 	}
 	main p{
 		line-height: 25px;
@@ -584,10 +584,11 @@ footer .row{
 		padding: 40px 0px;
 		margin-left: auto;
 		margin-right: auto;
-		text-indent: -2px;
-		padding: 30px 10px;
+		text-indent: -5px;
+		padding: 30px 5px;
 		font-weight: 400;
 		font-style: italic;
+		text-indent: -5px;
 	}
 	#about img{
 		margin-bottom: 20px;
@@ -659,6 +660,9 @@ footer .row{
 	#social{
 		top: 0px;
 	}
+	#copyright{
+		text-align: right;
+	}
 }
 @media only screen and (max-width: 550px) {
 	header img{
@@ -684,7 +688,7 @@ footer .row{
 		padding: 0px 10px;
 	}
 	footer{
-		font-size: 14px;
+		font-size: 18px;
 	}
 	footer h4{
 		font-size: 18px;
