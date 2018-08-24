@@ -38,7 +38,7 @@ html, body {
 }
 body {
 	background:#FFF;
-	color: #3a373e;
+	color: black;
 	font-size: 16px;
 	line-height: 26px;
 	letter-spacing: 0.5px;
@@ -55,7 +55,7 @@ p {
 }
 a {
 	text-decoration: none;
-	color: #3a373e;
+	color: black;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);	
 	cursor: pointer;
 }
@@ -63,7 +63,7 @@ a:hover {
 	color: black;
 }
 a:visited {
-	color: #3a373e;
+	color: black;
 }
 h4{
 	font-size: 21px;
@@ -128,7 +128,7 @@ header h1,
 	color: black;
 	font-size: 36px;
 	line-height: 130px;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 header h2{
@@ -150,7 +150,7 @@ header li{
 	display: inline-block;
 }
 header li:after{
-	content: '|';
+	content: ' /';
 	margin: 0px 4px;
 }
 header li:last-child:after{
@@ -169,12 +169,11 @@ header li:last-child:after{
 	position: absolute;
 	top: 15px;
 	right: 20px;
-	border-bottom: 1px solid orange;
+	border-bottom: 1px solid white;
 	z-index: 10;
 }
 #language:hover{
-	color: black;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid rgb(255, 119, 5);
 	cursor: pointer;
 }
 header img{
@@ -225,6 +224,7 @@ main h3{
 	line-height: 43px;
 	font-weight: normal;
 	margin-bottom: 42px;
+	max-width: 550px;
 }
 main a:link{
 	font-weight: 600;
@@ -245,11 +245,13 @@ main a:hover{
 }
 
 #about aside{
-	font-weight: 600;
+	font-weight: 400;
+	font-style: italic;
 	position: absolute;
 	width: 308px;
 	top: 358px;
 	left: -78%;
+	text-indent: -5px;
 }
 #about aside span{
 	color: #7cbfc0;
@@ -278,11 +280,11 @@ main a:hover{
 #cq_form{
 	max-width: 370px;
 	width: 34%;
-	background-color: #3a373e;
+	background-color: #2d3a61;;
 	color: white;
 	position: absolute;
 	left: 20px;
-	top: 10px;
+	top: -118px;
 	padding: 25px;
 }
 #cq_form input,
@@ -295,14 +297,13 @@ main a:hover{
 	font-size: 16px;
 	border-radius: 3px;
 }
-
 #cq_form h2{
-	font-size: 26px;
-	margin-bottom: 40px;
-	text-transform: uppercase;
-	text-align: center
+	font-size: 36px;
+	line-height: 40px;
+	margin-bottom: 30px;
+	text-align: left;
+	font-weight: 400;
 }
-
 .submit_button {
 	text-transform: uppercase;
 	background: #7cbfc0;
@@ -388,7 +389,7 @@ main a:hover{
 	}
 
 	.custom-dropdown--white::after {
-		color: #3a373e;
+		color: #2d3a61;
 	}
 
 	/* FF only temp fix */
@@ -470,7 +471,7 @@ footer .row{
 }
 #social{
 	position: absolute;
-	top: 30px;
+	top: 20px;
 	right: 0px;
 }
 #social span{
@@ -567,12 +568,10 @@ footer .row{
 		margin-top: 40px;
 		border-top: 1px solid #7cbfc0;
 		width: calc(100vw - 40px);
-		padding: 40px 0px;
 		margin-left: auto;
 		margin-right: auto;
-		text-indent: -5px;
 		padding: 30px 5px;
-		font-weight: 400i;
+		font-weight: 400;
 		font-style: italic;
 		text-indent: -5px;
 	}
@@ -655,6 +654,9 @@ footer .row{
 	}
 }
 @media only screen and (max-width: 550px) {
+	header h1, #phone{
+		font-weight: 400;
+	}
 	header img{
 		right: -90px;
 	}
