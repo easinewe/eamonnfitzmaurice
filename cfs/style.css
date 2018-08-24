@@ -426,6 +426,7 @@ footer > span{
 	margin: 0px auto;
 	padding: 20px 0px 0px 0px;
 	position: relative;
+	font-weight: 400;
 }
 footer a:link{
 	color: white;
@@ -575,6 +576,9 @@ footer .row{
 		font-style: italic;
 		text-indent: -5px;
 	}
+	#about aside p{
+		padding: 0px 20px 0px 15px;
+	}
 	#about img{
 		margin-bottom: 20px;
 		margin-top: 15px;
@@ -668,9 +672,6 @@ footer .row{
 	}
 	header h1{
 		font-size: 16px;
-	}
-	header span{
-		padding: 0px 10px;
 	}
 	footer{
 		font-size: 14px;
