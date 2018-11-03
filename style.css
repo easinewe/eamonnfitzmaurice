@@ -29,7 +29,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 		left:0;
 		right:0;
 		z-index:-2; /* needed to keep in the background */
-		background-image: url(images/eamonn-fitzmaurice-2018.jpg);
+		background-image: url(images/eamonn-fitzmaurice-2018b.jpg);
 		background-color: black;
 		background-position: center bottom;
 		-webkit-background-size: cover;
